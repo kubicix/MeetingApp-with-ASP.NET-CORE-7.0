@@ -25,3 +25,6 @@ C:\Users\kubil\Desktop\MeetingAp\obj\Debug\net7.0\refint\MeetingApp.dll
 C:\Users\kubil\Desktop\MeetingAp\obj\Debug\net7.0\MeetingApp.pdb
 C:\Users\kubil\Desktop\MeetingAp\obj\Debug\net7.0\MeetingApp.genruntimeconfig.cache
 C:\Users\kubil\Desktop\MeetingAp\obj\Debug\net7.0\ref\MeetingApp.dll
+C:\Users\kubil\Desktop\MeetingAp\obj\Debug\net7.0\MeetingApp.sourcelink.json
+C:\Users\kubil\Desktop\MeetingAp\bin\Debug\net7.0\libman.json
+C:\Users\kubil\Desktop\MeetingAp\bin\Debug\net7.0\MeetingApp.staticwebassets.runtime.json
