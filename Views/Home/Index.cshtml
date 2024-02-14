@@ -1,7 +1,19 @@
+@model MeetingInfo;
 @{
-    Layout="_Layout2";
+	ViewBag.Title = "Meeting Application";
+	Layout = "_Layout2";
 }
+<main class="text-center">
+	<h1 class="h4">@ViewData["Greeting"],  @ViewData["Username"]</h1>
+	<p>Please let us know that if you are joining our meeting.</p>
 
-<h1 class="h4">Hello, Guest!</h1>
-<p>Please let us know that if you are joining our meeting.</p>
-<a class="btn btn-sm btn-outline-danger" asp-controller="Meeting" asp-action="apply">Make an appointment</a>
+	<div class="card my-2">
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item">@Model.Location</li>
+			<li class="list-group-item">@Model.Date.ToString("dd/MM/yyyy HH:mm:ss")</li>
+			<li class="list-group-item">@Model.NumberOfPeople Attendees</li>
+		</ul>
+	</div>
+
+	<a class="btn btn-sm btn-outline-danger" asp-controller="Meeting" asp-action="apply">Make an appointment</a>
+</main>

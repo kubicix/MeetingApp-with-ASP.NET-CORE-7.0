@@ -1,4 +1,26 @@
-<h1 class="h4">Meeting Application Form</h1>
+@{
+	ViewBag.Title = "Application Form";
+}
+<h1 class="h4 text-center">Meeting Application Form</h1>
 <form action="">
-    <button class="btn btn-primary"  type="submit">Submit</button>
+	<div class="mb-3">
+		<label for="Name" class="form-label">Name</label>
+		<input type="text" name="Name" id="Name" class="form-control">
+	</div>
+	<div class="mb-3">
+		<label for="Phone" class="form-label">Phone</label>
+		<input type="text" name="Phone" id="Phone" class="form-control">
+	</div>
+	<div class="mb-3">
+		<label for="Email" class="form-label">Email</label>
+		<input type="email" name="Email" id="Email" class="form-control">
+	</div>
+	<div class="mb-3">
+		<label for="WillAttend" class="form-label">Status</label>
+		<select name="WillAttend" id="WillAttend" class="form-select">
+			<option value="true">Coming</option>
+			<option value="false">Not Coming</option>
+		</select>
+	</div>
+	<button class="btn btn-primary text-center" type="submit">Submit</button>
 </form>

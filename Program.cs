@@ -19,7 +19,7 @@ app.UseRouting();
 // but its editable
 app.MapControllerRoute(
     name:"default",
-    pattern:"{controller=Meeting}/{action=Index}/{id?}"
+    pattern:"{controller=Home}/{action=Index}/{id?}"
 );
 
 app.Run();
