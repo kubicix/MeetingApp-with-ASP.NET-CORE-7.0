@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MeetingApp.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MeetingAp.Controllers
@@ -11,11 +12,20 @@ namespace MeetingAp.Controllers
             return View();
         }
 
+
+        [HttpGet]
         public IActionResult Apply(){
             return View();
         }
 
-        public IActionResult List(){
+		[HttpPost]
+		public IActionResult Apply(UserInfo model)
+		{
+            
+			return View();
+		}
+
+		public IActionResult List(){
             return View();
         }
     }
