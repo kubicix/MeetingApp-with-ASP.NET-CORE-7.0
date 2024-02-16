@@ -13,19 +13,20 @@ namespace MeetingApp.Controllers{
 
             //ViewBag normal şekilde gönderir
             ViewBag.Greeting = hour > 12 ? "Have a nice day!":"Good Morning!";
-            ViewBag.Username="Kubi";
+            //ViewBag.Username="Kubi";
 
             //ViewData ise Json yani key value şeklinde
             //O yüzden bi tık daha güvenli
             ViewData["Greeting"]=hour > 12 ? "Have a nice day!":"Good Morning!";
-            ViewData["Username"]="Kubi";
+            int UserCount=ViewBag.UserCount=Repository.Users.Where(user=>user.WillAttend==true).Count();
+            //ViewData["Username"]="Kubi";
 
             var meetingInfo = new MeetingInfo()
             {
                 Id = 1,
                 Location = "Istanbul Fetih Congress Center",
                 Date = new DateTime(2024,03,20,20,0,0),
-                NumberOfPeople=100,
+                NumberOfPeople=UserCount,
             };
 
             return View(meetingInfo);

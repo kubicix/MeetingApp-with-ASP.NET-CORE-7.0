@@ -1,0 +1,21 @@
+@model UserInfo
+@{
+	ViewBag.Title = "Application Status";
+}
+<main class="text-center">
+	<h1 class="h4">Application Status</h1>
+
+	@if (Model.WillAttend == true)
+	{
+		<p>Thanks, @Model.Name @ViewBag.UserCount people is joining our meeting with you.</p>
+		<a class="btn btn-sm btn-outline-primary" href="/meeting/list">List Visitors</a>
+	}
+	else
+	{
+		<p>@Model.Name, we are sorry that you won't joining our meeting.</p>
+		<a class="btn btn-sm btn-outline-primary" href="/meeting/apply">Application Form</a>
+	}
+
+
+
+</main>
