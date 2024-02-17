@@ -18,9 +18,19 @@ namespace MeetingAp.Controllers
             // optional database insert
 
             // list
-            Repository.CreateUser(model);
-            ViewBag.UserCount=Repository.Users.Where(user=>user.WillAttend==true).Count();
-			return View("Thanks",model);
+            //form validation 
+            if (ModelState.IsValid)
+            {
+				Repository.CreateUser(model);
+				ViewBag.UserCount = Repository.Users.Where(user => user.WillAttend == true).Count();
+				return View("Thanks", model);
+			}
+            else
+            {
+                return View(model);
+
+            }
+            
 		}
 
 		public IActionResult List(){

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i8s9CCdR2r6G2POBLBeigO6V3S4aSe132rYZWx7l/fQ=",
+  "Hash": "TccbuMZjdXCO3PivYLd3MNDNEAcHfYASWW6LQqroTlE=",
   "Source": "MeetingApp",
   "BasePath": "_content/MeetingApp",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\kubil\\Desktop\\MeetingAp\\wwwroot\\css\\styles.css",
+      "SourceId": "MeetingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kubil\\Desktop\\MeetingAp\\wwwroot\\",
+      "BasePath": "_content/MeetingApp",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
     {
       "Identity": "C:\\Users\\kubil\\Desktop\\MeetingAp\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
       "SourceId": "MeetingApp",
